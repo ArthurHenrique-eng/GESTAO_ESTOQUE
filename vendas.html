@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vendas | Chás & Grãos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-app" data-page="vendas">
+    <header class="site-header app-header">
+      <div class="logo">
+        <span class="logo-mark">G</span>
+        <div>
+          <p class="logo-title">Gestão de Estoque</p>
+          <p class="logo-subtitle">Chás &amp; Grãos</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a class="active" href="vendas.html">Vendas</a>
+        <a href="estoque.html">Estoque</a>
+        <a href="administrativo.html">Administrativo</a>
+        <a class="ghost-link" href="index.html">Sair</a>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <section class="page-hero">
+        <div>
+          <h1>Vendas em tempo real</h1>
+          <p>
+            Acompanhe o fluxo de pedidos de chás, grãos especiais e kits de
+            degustação.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button">Nova venda</button>
+            <button class="outline-button" type="button">Clientes VIP</button>
+          </div>
+        </div>
+        <div class="illustration" aria-hidden="true"></div>
+      </section>
+
+      <section class="cards-grid">
+        <article class="metric-card">
+          <p class="metric-label">Pedidos do dia</p>
+          <p class="metric-value">42</p>
+          <p class="metric-note">Ticket médio R$ 78</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Produtos em alta</p>
+          <p class="metric-value">Matcha &amp; Arabica</p>
+          <p class="metric-note">+18% na última semana</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Pagamento pendente</p>
+          <p class="metric-value">6 pedidos</p>
+          <p class="metric-note">Contatar clientes</p>
+        </article>
+      </section>
+
+      <section class="table-card">
+        <div class="table-header">
+          <h2>Últimos pedidos</h2>
+          <div class="chip-group">
+            <span class="chip">Hoje</span>
+            <span class="chip soft">Semana</span>
+            <span class="chip soft">Mês</span>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Pedido</th>
+                <th>Cliente</th>
+                <th>Itens</th>
+                <th>Status</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#CH-1842</td>
+                <td>Ana Borges</td>
+                <td>Chá oolong, blend cítrico</td>
+                <td><span class="status-pill ok">Pago</span></td>
+                <td>R$ 128</td>
+              </tr>
+              <tr>
+                <td>#GR-0091</td>
+                <td>Lucas T.</td>
+                <td>Grão etíope, kit moedor</td>
+                <td><span class="status-pill warn">Separação</span></td>
+                <td>R$ 212</td>
+              </tr>
+              <tr>
+                <td>#CH-1839</td>
+                <td>Marina Souza</td>
+                <td>Chá branco, flor de jasmim</td>
+                <td><span class="status-pill neutral">Envio</span></td>
+                <td>R$ 96</td>
+              </tr>
+              <tr>
+                <td>#GR-0087</td>
+                <td>Caio Ramos</td>
+                <td>Blend torrado médio</td>
+                <td><span class="status-pill ok">Pago</span></td>
+                <td>R$ 74</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

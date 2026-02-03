@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestão de Estoque | Chás & Grãos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-login" data-page="login">
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-mark">G</span>
+        <div>
+          <p class="logo-title">Gestão de Estoque</p>
+          <p class="logo-subtitle">ESTOQUE GERAL</p>
+        </div>
+      </div>
+      <div class="header-tag"> 2026</div>
+    </header>
+
+    <main class="login-layout">
+      <section class="hero">
+        <div class="badge">TELA DE LOGIN</div>
+        <h1>Grãos de qualidade e aqui!</h1>
+        <p>
+          Uma visão integrada para acompanhar pedidos, expedição e estoque em um
+          só lugar. Planeje reposições com segurança e acompanhe os campeões de
+          venda.
+        </p>
+        <div class="hero-actions">
+          <button class="ghost-button" type="button">Ver Destaques</button>
+          <button class="outline-button" type="button">Calendário de Lotes</button>
+        </div>
+        <div class="hero-cards">
+          <article class="mini-card">
+            <p class="mini-title">Vendas do Dia</p>
+            <p class="mini-value">R$ 3.240</p>
+            <p class="mini-note">+12% em chás florais</p>
+          </article>
+          <article class="mini-card">
+            <p class="mini-title">Alertas de Estoque</p>
+            <p class="mini-value">5 itens</p>
+            <p class="mini-note">Grãos premium &amp; blends</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Acesso ao sistema</h2>
+          <p>Escolha o perfil e informe sua senha.</p>
+        </div>
+        <form class="login-form" id="login-form" autocomplete="off">
+          <label for="role-select">Perfil de usuário</label>
+          <div class="select-wrap">
+            <select id="role-select" name="role">
+              <option value="vendedor">Vendedor</option>
+              <option value="estoquista">Estoquista</option>
+              <option value="administrativo">Administrativo</option>
+            </select>
+            <span class="select-icon" aria-hidden="true">▼</span>
+          </div>
+
+          <label for="password-input">Senha</label>
+          <input
+            id="password-input"
+            name="password"
+            type="password"
+            placeholder="Digite sua senha"
+          />
+
+          <button id="login-button" class="primary-button" type="button">
+            Entrar
+          </button>
+          <p class="hint">Pressione Enter para continuar.</p>
+          <p class="feedback" id="login-feedback" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Gestão de Estoque • Loja de Chás &amp; Grãos</p>
+      <p>Operação integrada por perfil de acesso.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

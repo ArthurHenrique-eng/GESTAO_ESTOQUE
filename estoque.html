@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Estoque | Chás & Grãos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-app" data-page="estoque">
+    <header class="site-header app-header">
+      <div class="logo">
+        <span class="logo-mark">G</span>
+        <div>
+          <p class="logo-title">Gestão de Estoque</p>
+          <p class="logo-subtitle">Chás &amp; Grãos</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="vendas.html">Vendas</a>
+        <a class="active" href="estoque.html">Estoque</a>
+        <a href="administrativo.html">Administrativo</a>
+        <a class="ghost-link" href="index.html">Sair</a>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <section class="page-hero">
+        <div>
+          <h1>Mapa de estoque e lotes</h1>
+          <p>
+            Controle entradas, validade e níveis mínimos para chás, grãos e
+            blends especiais.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button">Registrar entrada</button>
+            <button class="outline-button" type="button">Gerar inventário</button>
+          </div>
+        </div>
+        <div class="illustration" aria-hidden="true"></div>
+      </section>
+
+      <section class="cards-grid">
+        <article class="metric-card">
+          <p class="metric-label">Itens ativos</p>
+          <p class="metric-value">128</p>
+          <p class="metric-note">12 categorias</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Reposição urgente</p>
+          <p class="metric-value">7 produtos</p>
+          <p class="metric-note">Nível crítico</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Validade próxima</p>
+          <p class="metric-value">9 lotes</p>
+          <p class="metric-note">Até 30 dias</p>
+        </article>
+      </section>
+
+      <section class="table-card">
+        <div class="table-header">
+          <h2>Itens principais</h2>
+          <div class="chip-group">
+            <span class="chip">Chás</span>
+            <span class="chip soft">Grãos</span>
+            <span class="chip soft">Kits</span>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Disponível</th>
+                <th>Nível</th>
+                <th>Validade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chá verde Sencha</td>
+                <td>Chás</td>
+                <td>42 un.</td>
+                <td><span class="status-pill ok">Seguro</span></td>
+                <td>18/05/2026</td>
+              </tr>
+              <tr>
+                <td>Grão colombiano</td>
+                <td>Grãos</td>
+                <td>12 un.</td>
+                <td><span class="status-pill warn">Baixo</span></td>
+                <td>02/04/2026</td>
+              </tr>
+              <tr>
+                <td>Matcha cerimonial</td>
+                <td>Chás</td>
+                <td>8 un.</td>
+                <td><span class="status-pill danger">Crítico</span></td>
+                <td>22/03/2026</td>
+              </tr>
+              <tr>
+                <td>Blend torra média</td>
+                <td>Grãos</td>
+                <td>36 un.</td>
+                <td><span class="status-pill ok">Seguro</span></td>
+                <td>17/07/2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

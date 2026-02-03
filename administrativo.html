@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Administrativo | Chás & Grãos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-app" data-page="administrativo">
+    <header class="site-header app-header">
+      <div class="logo">
+        <span class="logo-mark">G</span>
+        <div>
+          <p class="logo-title">Gestão de Estoque</p>
+          <p class="logo-subtitle">Chás &amp; Grãos</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="vendas.html">Vendas</a>
+        <a href="estoque.html">Estoque</a>
+        <a class="active" href="administrativo.html">Administrativo</a>
+        <a class="ghost-link" href="index.html">Sair</a>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <section class="page-hero">
+        <div>
+          <h1>Gestão administrativa</h1>
+          <p>
+            Integre finanças, relatórios e equipe em um painel único para a loja
+            de chás e grãos.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button">Novo relatório</button>
+            <button class="outline-button" type="button">Exportar dados</button>
+          </div>
+        </div>
+        <div class="illustration" aria-hidden="true"></div>
+      </section>
+
+      <section class="cards-grid">
+        <article class="metric-card">
+          <p class="metric-label">Faturamento mensal</p>
+          <p class="metric-value">R$ 82.430</p>
+          <p class="metric-note">Atualizado hoje</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Equipe ativa</p>
+          <p class="metric-value">14 pessoas</p>
+          <p class="metric-note">Vendas + Estoque</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Pendências fiscais</p>
+          <p class="metric-value">2 alertas</p>
+          <p class="metric-note">Conferir notas</p>
+        </article>
+      </section>
+
+      <section class="table-card">
+        <div class="table-header">
+          <h2>Alertas operacionais</h2>
+          <div class="chip-group">
+            <span class="chip">Prioridade alta</span>
+            <span class="chip soft">Semana</span>
+            <span class="chip soft">Mês</span>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Área</th>
+                <th>Descrição</th>
+                <th>Responsável</th>
+                <th>Prazo</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Financeiro</td>
+                <td>Conferir notas de fornecedores</td>
+                <td>Lia Torres</td>
+                <td>05/02/2026</td>
+                <td><span class="status-pill warn">Em análise</span></td>
+              </tr>
+              <tr>
+                <td>Operação</td>
+                <td>Revisar checklist de torra</td>
+                <td>Edu Andrade</td>
+                <td>07/02/2026</td>
+                <td><span class="status-pill ok">No prazo</span></td>
+              </tr>
+              <tr>
+                <td>Equipe</td>
+                <td>Treinamento de atendimento</td>
+                <td>Marina Prado</td>
+                <td>12/02/2026</td>
+                <td><span class="status-pill neutral">Agendado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
