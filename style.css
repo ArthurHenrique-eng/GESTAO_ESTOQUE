@@ -535,3 +535,75 @@ th {
     flex-wrap: wrap;
   }
 }
+
+.chatkit-shell {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 10;
+  display: grid;
+  gap: 12px;
+  justify-items: end;
+}
+
+.chatkit-launcher {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--grain));
+  color: white;
+  box-shadow: 0 12px 26px rgba(209, 111, 75, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chatkit-launcher:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 32px rgba(209, 111, 75, 0.35);
+}
+
+.chatkit-panel {
+  width: min(360px, 88vw);
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.chatkit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: rgba(47, 106, 78, 0.1);
+}
+
+.chatkit-title {
+  margin: 0;
+  font-weight: 700;
+  font-family: var(--font-title);
+}
+
+.chatkit-subtitle {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: rgba(30, 27, 22, 0.6);
+}
+
+.chatkit-close {
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: rgba(30, 27, 22, 0.7);
+}
+
+.chatkit-body {
+  padding: 16px 18px 20px;
+  color: rgba(30, 27, 22, 0.75);
+  display: grid;
+  gap: 12px;
+  max-height: 360px;
+  overflow: auto;
+}

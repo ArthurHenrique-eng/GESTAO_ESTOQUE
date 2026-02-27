@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gestão de Estoque | Chás & Grãos</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.platform.openai.com/deployments/chatkit/chatkit.js"
+      async
+    ></script>
   </head>
   <body class="page-login" data-page="login">
     <header class="site-header">
@@ -82,6 +86,35 @@
       <p>Gestão de Estoque • Loja de Chás &amp; Grãos</p>
       <p>Operação integrada por perfil de acesso.</p>
     </footer>
+
+    <aside class="chatkit-shell" aria-live="polite">
+      <button class="chatkit-launcher" id="chatkit-launcher" type="button">
+        Precisa de ajuda?
+      </button>
+      <div class="chatkit-panel" id="chatkit-panel" hidden>
+        <div class="chatkit-header">
+          <div>
+            <p class="chatkit-title">Chat de suporte</p>
+            <p class="chatkit-subtitle">Pergunte sobre o sistema</p>
+          </div>
+          <button
+            class="chatkit-close"
+            id="chatkit-close"
+            type="button"
+            aria-label="Fechar chat"
+          >
+            ×
+          </button>
+        </div>
+        <div class="chatkit-body" id="chatkit-body">
+          <p>
+            Integração ChatKit pronta para conectar. Assim que o backend for
+            configurado, o chat aparece aqui.
+          </p>
+          <div id="chatkit-root"></div>
+        </div>
+      </div>
+    </aside>
 
     <script src="script.js"></script>
   </body>
