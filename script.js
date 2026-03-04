@@ -11,6 +11,7 @@
   const chatLauncher = document.getElementById("chatkit-launcher");
   const chatPanel = document.getElementById("chatkit-panel");
   const chatClose = document.getElementById("chatkit-close");
+  const calendarioButton = document.querySelector(".outline-button");
 
   const accessRules = {
     vendedor: { password: "123", route: "vendas.html", label: "vendas" },
@@ -60,6 +61,7 @@
       `Você será direcionado para a página de ${access.label}.`,
       "ok"
     );
+    localStorage.setItem('loggedIn', 'true');
     window.setTimeout(() => {
       window.location.href = access.route;
     }, 500);
@@ -126,6 +128,12 @@
 
   if (chatClose) {
     chatClose.addEventListener("click", () => toggleChat(false));
+  }
+
+  if (calendarioButton) {
+    calendarioButton.addEventListener("click", () => {
+      window.location.href = "calendario.html";
+    });
   }
 })();
 

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calendário de Lotes | Gestão de Estoque</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .calendar {
+        max-width: 800px;
+        margin: 0 auto;
+        background: var(--paper);
+        border-radius: var(--radius);
+        padding: 20px;
+        box-shadow: var(--shadow);
+      }
+      .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+      }
+      .day {
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .day:hover {
+        background: var(--accent-soft);
+      }
+      .day.selected {
+        background: var(--accent);
+        color: var(--paper);
+      }
+      .day.reserved {
+        background: var(--tea);
+        color: var(--paper);
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+      }
+      .modal.show {
+        display: flex;
+      }
+      .modal-content {
+        background: var(--paper);
+        padding: 20px;
+        border-radius: var(--radius);
+        max-width: 400px;
+        width: 100%;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid var(--grain);
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-mark">G</span>
+        <div>
+          <p class="logo-title">Calendário de Lotes</p>
+          <p class="logo-subtitle">GESTÃO DE ESTOQUE</p>
+        </div>
+      </div>
+      <div class="header-tag">
+        <a href="index.html" style="color: var(--paper); text-decoration: none;">Voltar</a>
+      </div>
+    </header>
+
+    <main style="padding: 20px;">
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="prev-month">&lt;</button>
+          <h2 id="month-year"></h2>
+          <button id="next-month">&gt;</button>
+        </div>
+        <div class="calendar-grid" id="calendar-grid">
+          <!-- Dias serão inseridos aqui -->
+        </div>
+      </div>
+      <div style="margin-top: 20px; text-align: center;">
+        <button class="primary-button" id="reserve-button">Reservar Estoque para Dias Selecionados</button>
+      </div>
+    </main>
+
+    <div class="modal" id="cadastro-modal">
+      <div class="modal-content">
+        <h2>Cadastro Necessário</h2>
+        <p>Para acessar o calendário, você precisa se cadastrar.</p>
+        <form id="cadastro-form">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+          </div>
+          <button type="submit" class="primary-button">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('loggedIn')) {
+          document.getElementById('cadastro-modal').classList.add('show');
+        } else {
+          initCalendar();
+        }
+
+        document.getElementById('cadastro-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Simular cadastro
+          localStorage.setItem('loggedIn', 'true');
+          localStorage.setItem('user', JSON.stringify({
+            nome: document.getElementById('nome').value,
+            email: document.getElementById('email').value
+          }));
+          document.getElementById('cadastro-modal').classList.remove('show');
+          initCalendar();
+        });
+      });
+
+      let currentDate = new Date();
+      let selectedDays = new Set();
+      let reservedDays = new Set(JSON.parse(localStorage.getItem('reservedDays') || '[]'));
+
+      function initCalendar() {
+        renderCalendar();
+        document.getElementById('prev-month').addEventListener('click', () => {
+          currentDate.setMonth(currentDate.getMonth() - 1);
+          renderCalendar();
+        });
+        document.getElementById('next-month').addEventListener('click', () => {
+          currentDate.setMonth(currentDate.getMonth() + 1);
+          renderCalendar();
+        });
+        document.getElementById('reserve-button').addEventListener('click', () => {
+          reservedDays = new Set([...reservedDays, ...selectedDays]);
+          localStorage.setItem('reservedDays', JSON.stringify([...reservedDays]));
+          selectedDays.clear();
+          renderCalendar();
+          alert('Estoque reservado para os dias selecionados!');
+        });
+      }
+
+      function renderCalendar() {
+        const month = currentDate.getMonth();
+        const year = currentDate.getFullYear();
+        document.getElementById('month-year').textContent = `${getMonthName(month)} ${year}`;
+
+        const firstDay = new Date(year, month, 1);
+        const lastDay = new Date(year, month + 1, 0);
+        const startDate = new Date(firstDay);
+        startDate.setDate(startDate.getDate() - firstDay.getDay());
+
+        const grid = document.getElementById('calendar-grid');
+        grid.innerHTML = '';
+
+        // Dias da semana
+        const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+        daysOfWeek.forEach(day => {
+          const dayHeader = document.createElement('div');
+          dayHeader.textContent = day;
+          dayHeader.style.fontWeight = 'bold';
+          grid.appendChild(dayHeader);
+        });
+
+        let date = new Date(startDate);
+        while (date <= lastDay || grid.children.length % 7 !== 0) {
+          const dayDiv = document.createElement('div');
+          dayDiv.classList.add('day');
+          if (date.getMonth() === month) {
+            dayDiv.textContent = date.getDate();
+            const dateStr = date.toDateString();
+            if (selectedDays.has(dateStr)) {
+              dayDiv.classList.add('selected');
+            } else if (reservedDays.has(dateStr)) {
+              dayDiv.classList.add('reserved');
+            }
+            dayDiv.addEventListener('click', () => {
+              if (reservedDays.has(dateStr)) return;
+              if (selectedDays.has(dateStr)) {
+                selectedDays.delete(dateStr);
+                dayDiv.classList.remove('selected');
+              } else {
+                selectedDays.add(dateStr);
+                dayDiv.classList.add('selected');
+              }
+            });
+          }
+          grid.appendChild(dayDiv);
+          date.setDate(date.getDate() + 1);
+        }
+      }
+
+      function getMonthName(month) {
+        const months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+        return months[month];
+      }
+    </script>
+  </body>
+</html>
