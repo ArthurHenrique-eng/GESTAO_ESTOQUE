@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Calendário de Lotes | Gestão de Estoque</title>
+    <title>CalendÃ¡rio de Lotes | GestÃ£o de Estoque</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       .calendar {
@@ -80,17 +80,21 @@
     </style>
   </head>
   <body>
-    <header class="site-header">
+        <header class="site-header app-header">
       <div class="logo">
         <span class="logo-mark">G</span>
         <div>
           <p class="logo-title">Calendário de Lotes</p>
-          <p class="logo-subtitle">GESTÃO DE ESTOQUE</p>
+          <p class="logo-subtitle">Gestão de Estoque</p>
         </div>
       </div>
-      <div class="header-tag">
-        <a href="index.html" style="color: var(--paper); text-decoration: none;">Voltar</a>
-      </div>
+      <nav class="site-nav">
+        <a href="vendas.html">Vendas</a>
+        <a href="estoque.html">Estoque</a>
+        <a href="administrativo.html">Administrativo</a>
+        <a href="novidades.html">Novidades</a>
+        <a class="ghost-link" href="index.html">Sair</a>
+      </nav>
     </header>
 
     <main style="padding: 20px;">
@@ -101,7 +105,7 @@
           <button id="next-month">&gt;</button>
         </div>
         <div class="calendar-grid" id="calendar-grid">
-          <!-- Dias serão inseridos aqui -->
+          <!-- Dias serÃ£o inseridos aqui -->
         </div>
       </div>
       <div style="margin-top: 20px; text-align: center;">
@@ -111,8 +115,8 @@
 
     <div class="modal" id="cadastro-modal">
       <div class="modal-content">
-        <h2>Cadastro Necessário</h2>
-        <p>Para acessar o calendário, você precisa se cadastrar.</p>
+        <h2>Cadastro NecessÃ¡rio</h2>
+        <p>Para acessar o calendÃ¡rio, vocÃª precisa se cadastrar.</p>
         <form id="cadastro-form">
           <div class="form-group">
             <label for="nome">Nome:</label>
@@ -189,7 +193,7 @@
         grid.innerHTML = '';
 
         // Dias da semana
-        const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+        const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'SÃ¡b'];
         daysOfWeek.forEach(day => {
           const dayHeader = document.createElement('div');
           dayHeader.textContent = day;
@@ -226,7 +230,7 @@
       }
 
       function getMonthName(month) {
-        const months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+        const months = ['Janeiro', 'Fevereiro', 'MarÃ§o', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
         return months[month];
       }
     </script>
