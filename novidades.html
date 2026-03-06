@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Novidades | Chás & Grãos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-app page-novidades" data-page="novidades">
+    <header class="site-header app-header">
+      <div class="logo">
+        <span class="logo-mark">G</span>
+        <div>
+          <p class="logo-title">Gestão de Estoque</p>
+          <p class="logo-subtitle">Chás &amp; Grãos</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="vendas.html">Vendas</a>
+        <a href="estoque.html">Estoque</a>
+        <a href="administrativo.html">Administrativo</a>
+        <a class="active" href="novidades.html">Novidades</a>
+        <a class="ghost-link" href="index.html">Sair</a>
+      </nav>
+    </header>
+
+    <main class="app-main novidades-main">
+      <section class="novidades-hero">
+        <p class="badge">COLEÇÃO DA SEMANA</p>
+        <h1>Novidades em destaque para reposição rápida</h1>
+        <p>
+          Selecione os produtos recém-chegados, compare categorias e atualize o
+          estoque com mais agilidade.
+        </p>
+      </section>
+
+      <section class="novidades-toolbar">
+        <div class="toolbar-group" role="tablist" aria-label="Filtrar categorias">
+          <button class="chip filter-chip is-active" type="button" data-category="todas">
+            Todas
+          </button>
+          <button class="chip soft filter-chip" type="button" data-category="chas">
+            Chás
+          </button>
+          <button class="chip soft filter-chip" type="button" data-category="graos">
+            Grãos
+          </button>
+          <button class="chip soft filter-chip" type="button" data-category="kits">
+            Kits
+          </button>
+        </div>
+
+        <label class="sort-wrap" for="sort-select">
+          Ordenar por
+          <select id="sort-select">
+            <option value="latest">Mais recentes</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="novidades-grid" id="novidades-grid" aria-live="polite">
+        <article class="product-card" data-category="chas" data-price="49.9" data-order="1">
+          <div class="product-media media-cha"></div>
+          <div class="product-body">
+            <span class="status-pill ok">Novo</span>
+            <h2>Chá Branco Silver Needle</h2>
+            <p class="product-copy">Perfil floral leve e lote premium recém-importado.</p>
+            <div class="product-meta">
+              <p class="product-price">R$ 49,90</p>
+              <button class="primary-button" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="graos" data-price="37.5" data-order="2">
+          <div class="product-media media-grao"></div>
+          <div class="product-body">
+            <span class="status-pill ok">Novo</span>
+            <h2>Grão Etiópia Yirgacheffe</h2>
+            <p class="product-copy">Torra clara com notas cítricas para linha especial.</p>
+            <div class="product-meta">
+              <p class="product-price">R$ 37,50</p>
+              <button class="primary-button" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="kits" data-price="79.9" data-order="3">
+          <div class="product-media media-kit"></div>
+          <div class="product-body">
+            <span class="status-pill neutral">Pré-venda</span>
+            <h2>Kit Ritual da Manhã</h2>
+            <p class="product-copy">Combo com chá, grão e acessórios para lançamento.</p>
+            <div class="product-meta">
+              <p class="product-price">R$ 79,90</p>
+              <button class="primary-button" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="chas" data-price="42" data-order="4">
+          <div class="product-media media-cha-2"></div>
+          <div class="product-body">
+            <span class="status-pill ok">Novo</span>
+            <h2>Infusão Hibisco & Frutas</h2>
+            <p class="product-copy">Mistura sem cafeína com alto giro no varejo.</p>
+            <div class="product-meta">
+              <p class="product-price">R$ 42,00</p>
+              <button class="primary-button" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="graos" data-price="33.9" data-order="5">
+          <div class="product-media media-grao-2"></div>
+          <div class="product-body">
+            <span class="status-pill ok">Novo</span>
+            <h2>Blend Cerrado Reserva</h2>
+            <p class="product-copy">Blend equilibrado para consumo diário e assinatura.</p>
+            <div class="product-meta">
+              <p class="product-price">R$ 33,90</p>
+              <button class="primary-button" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="kits" data-price="99.9" data-order="6">
+          <div class="product-media media-kit-2"></div>
+          <div class="product-body">
+            <span class="status-pill warn">Edição limitada</span>
+            <h2>Kit Degustação Sensorial</h2>
+            <p class="product-copy">Seleção de microlotes para clientes de alto ticket.</p>
+            <div class="product-meta">
+              <p class="product-price">R$ 99,90</p>
+              <button class="primary-button" type="button">Adicionar</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="novidades.js"></script>
+  </body>
+</html>

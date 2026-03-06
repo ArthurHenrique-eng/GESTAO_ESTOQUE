@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const isLoginPage = document.body?.dataset?.page === "login";
   if (!isLoginPage) {
     return;
@@ -12,6 +12,7 @@
   const chatPanel = document.getElementById("chatkit-panel");
   const chatClose = document.getElementById("chatkit-close");
   const calendarioButton = document.querySelector(".outline-button");
+  const destaquesButton = document.querySelector(".ghost-button");
 
   const accessRules = {
     vendedor: { password: "123", route: "vendas.html", label: "vendas" },
@@ -57,11 +58,8 @@
       return;
     }
 
-    showFeedback(
-      `Você será direcionado para a página de ${access.label}.`,
-      "ok"
-    );
-    localStorage.setItem('loggedIn', 'true');
+    showFeedback(`Você será direcionado para a página de ${access.label}.`, "ok");
+    localStorage.setItem("loggedIn", "true");
     window.setTimeout(() => {
       window.location.href = access.route;
     }, 500);
@@ -135,5 +133,10 @@
       window.location.href = "calendario.html";
     });
   }
-})();
 
+  if (destaquesButton) {
+    destaquesButton.addEventListener("click", () => {
+      window.location.href = "novidades.html";
+    });
+  }
+})();
