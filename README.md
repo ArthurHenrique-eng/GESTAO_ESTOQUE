@@ -1,14 +1,14 @@
-# GESTÃO DE ESTOQUE - SISTEMA WEB - PROTÓTIPO
+# <h3 align="center"> GESTÃO DE ESTOQUE - PROTÓTIPO SISTEMA WEB - **PROTÓTIPO** </h3>
 
 Um sistema de gestão de estoque moderno e responsivo para lojas de chás e grãos especiais. Desenvolvido com foco em usabilidade, performance e interfaces intuitivas para diferentes perfis de usuário.
 
 ---
 
-## Sobre o Projeto
+<h3 align="center"> Sobre GESTÃO ESTOQUE </h3>
 
 Gestão de Estoque é uma aplicação web que oferece **visibilidade completa** sobre operações de vendas, controle de estoque, gerenciamento de lotes e relatórios administrativos. Ideal para pequenas e médias lojas que buscam organizar suas operações em um único lugar.
 
-### Funcionalidades Principais
+<h3 align="center"> Funcionalidade </h3>
 
 - 🔐 **Autenticação por Perfil**: Vendedor, Estoquista, Administrativo
 - 📊 **Dashboard em Tempo Real**: Visualização de vendas, alertas e atividades
@@ -19,7 +19,7 @@ Gestão de Estoque é uma aplicação web que oferece **visibilidade completa** 
 - ⚙️ **Administrativo**: Relatórios, finanças e gerenciamento de equipe
 
 ---
-### Instalação
+<h3 align="center"> Como utilizar </h3>
 
 ```bash
 # 1️⃣ Clone o repositório
@@ -34,17 +34,17 @@ python -m http.server 8000
 # Acesse: http://localhost:8000
 ```
 
-### Login Padrão
+<h3 align="center"> Login </h3>
 
 | Perfil | Senha |
 |--------|-------|
-| 👨‍💼 Vendedor | `vendedor123` |
-| 📦 Estoquista | `estoque123` |
-| ⚙️ Administrativo | `admin123` |
+| Vendedor | `vendedor123` |
+| Estoquista | `estoque123` |
+| Administrativo | `admin123` |
 
 ---
 
-## 📁 Estrutura do Projeto
+<h3 align="center"> Estrutura do projeto </h3>
 
 ```
 GESTAO_ESTOQUE/
@@ -83,29 +83,6 @@ GESTAO_ESTOQUE/
 
 ---
 
-## Perfis
-
-### Vendedor
-- Visualizar dados de vendas em tempo real
-- Consultar disponibilidade de estoque
-- Acompanhar histórico de vendas
-- Ver produtos em destaque
-
-### Estoquista  
-- Registrar entradas e saídas
-- Monitorar níveis mínimos
-- Gerenciar prazos de validade
-- Processar devolução
-
-### Administrativo
-- Gerar relatórios completos
-- Gerenciar usuários
-- Configurar sistema
-- Análise de KPIs
-- Exportar dados
-
----
-
 <h3 align="center"> Linguagens e Tecnologias </h3>
 <p align="center">
   <a href="https://github.com/ArthurHenrique-eng?tab=repositories">
@@ -119,8 +96,9 @@ GESTAO_ESTOQUE/
   </a>
 
 ---
-## Segurança
-### ⚠️ Status Atual
+<h3 align="center"> Segurança </h3>
+
+### Status Atual
 Este é um **sistema de demonstração/protótipo**. 
 
 ```javascript
@@ -133,11 +111,12 @@ const validPasswords = {
 ```
 ---
 
-## Autor
-
+<h3 align="center"> Autor </h3>
+<p aling="center">
 ```
 📧 Email: arthurhpb7@gmail.com
 🐙 GitHub: github.com/ArthurHenrique-eng
 💼 LinkedIn: linkedin.com/in/seu-perfil
 ```
+</p>
 ---
