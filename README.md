@@ -1,4 +1,4 @@
-# <h3 align="center"> GESTÃO DE ESTOQUE - PROTÓTIPO SISTEMA WEB - **PROTÓTIPO** </h3>
+# <h3 align="center"> GESTÃO DE ESTOQUE - PROTÓTIPO SISTEMA WEB </h3>
 
 Um sistema de gestão de estoque moderno e responsivo para lojas de chás e grãos especiais. Desenvolvido com foco em usabilidade, performance e interfaces intuitivas para diferentes perfis de usuário.
 
@@ -7,6 +7,8 @@ Um sistema de gestão de estoque moderno e responsivo para lojas de chás e grã
 <h3 align="center"> Sobre GESTÃO ESTOQUE </h3>
 
 Gestão de Estoque é uma aplicação web que oferece **visibilidade completa** sobre operações de vendas, controle de estoque, gerenciamento de lotes e relatórios administrativos. Ideal para pequenas e médias lojas que buscam organizar suas operações em um único lugar.
+
+---
 
 <h3 align="center"> Funcionalidade </h3>
 
@@ -33,15 +35,16 @@ cd GESTAO_ESTOQUE
 python -m http.server 8000
 # Acesse: http://localhost:8000
 ```
+---
 
 <h3 align="center"> Login </h3>
-
+```
 | Perfil | Senha |
 |--------|-------|
 | Vendedor | `vendedor123` |
 | Estoquista | `estoque123` |
 | Administrativo | `admin123` |
-
+```
 ---
 
 <h3 align="center"> Estrutura do projeto </h3>
@@ -96,7 +99,7 @@ GESTAO_ESTOQUE/
   </a>
 
 ---
-<h3 align="center"> Segurança </h3>
+<h3> Segurança </h3>
 
 ### Status Atual
 Este é um **sistema de demonstração/protótipo**. 
@@ -112,11 +115,9 @@ const validPasswords = {
 ---
 
 <h3 align="center"> Autor </h3>
-<p aling="center">
 ```
 📧 Email: arthurhpb7@gmail.com
 🐙 GitHub: github.com/ArthurHenrique-eng
 💼 LinkedIn: linkedin.com/in/seu-perfil
 ```
-</p>
 ---
