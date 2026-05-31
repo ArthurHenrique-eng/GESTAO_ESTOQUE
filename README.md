@@ -38,6 +38,7 @@ python -m http.server 8000
 ---
 
 <h3 align="center"> Login </h3>
+
 ```
 | Perfil | Senha |
 |--------|-------|
@@ -99,7 +100,7 @@ GESTAO_ESTOQUE/
   </a>
 
 ---
-<h3> Segurança </h3>
+<h3 aling="top center"> Segurança </h3>
 
 ### Status Atual
 Este é um **sistema de demonstração/protótipo**. 
@@ -114,9 +115,18 @@ const validPasswords = {
 ```
 ---
 
-## Autor
-```Email: arthurhpb7@gmail.com
-GitHub: github.com/ArthurHenrique-eng
-LinkedIn: linkedin.com/in/seu-perfil
-```
+<h3 aling="top center"> AUTOR </h3>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/arthur-barbosa-38564b371/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://github.com/ArthurHenrique-eng">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="mailto:arthurhpb7@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
+
 ---
