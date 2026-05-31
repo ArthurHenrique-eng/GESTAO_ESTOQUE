@@ -1,0 +1,228 @@
+
+
+.page-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.novidades-hero {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(45, 90, 61, 0.05) 0%, rgba(212, 165, 116, 0.05) 100%);
+  border-radius: var(--radius);
+}
+
+.novidades-hero h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.novidades-hero p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  max-width: 600px;
+}
+
+.novidades-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.filter-chip.is-active {
+  background: var(--primary);
+  color: var(--paper);
+  border-color: var(--primary);
+}
+
+.filter-chip.soft.is-active {
+  background: var(--primary);
+  color: var(--paper);
+}
+
+.sort-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.sort-wrap select {
+  min-width: 150px;
+}
+
+.novidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.product-media {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, var(--accent-soft), var(--tea));
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.media-cha {
+  background-image: url('/img/produto_cha_branco');
+}
+
+.media-cha-2 {
+  background-image: url('/img/produto_hibisco_e_fruta');
+}
+
+.media-grao {
+  background-image: url('/img/produto_grao_etiopia_Yirgacheffe');
+}
+
+.media-grao-2 {
+  background-image: url('/img/produto_blend_cerrado_reserva');
+}
+
+.media-kit {
+  background-image: url('/img/produto_kit_ritual_da_manha');
+}
+
+.media-kit-2 {
+  background-image: url('/img/produto_kit_degustacao_sensorial');
+}
+
+.product-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-body h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.product-copy {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0;
+}
+
+.product-meta button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .app-main {
+    padding: 1.5rem;
+  }
+
+  .novidades-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .novidades-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .app-main {
+    padding: 1rem;
+  }
+
+  .novidades-hero {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .novidades-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .novidades-toolbar {
+    gap: 1rem;
+  }
+
+  .toolbar-group {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sort-wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .novidades-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

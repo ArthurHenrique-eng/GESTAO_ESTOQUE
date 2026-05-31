@@ -3,81 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CalendÃ¡rio de Lotes | GestÃ£o de Estoque</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      .calendar {
-        max-width: 800px;
-        margin: 0 auto;
-        background: var(--paper);
-        border-radius: var(--radius);
-        padding: 20px;
-        box-shadow: var(--shadow);
-      }
-      .calendar-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-      .calendar-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 10px;
-      }
-      .day {
-        padding: 10px;
-        text-align: center;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-      .day:hover {
-        background: var(--accent-soft);
-      }
-      .day.selected {
-        background: var(--accent);
-        color: var(--paper);
-      }
-      .day.reserved {
-        background: var(--tea);
-        color: var(--paper);
-      }
-      .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.5);
-        justify-content: center;
-        align-items: center;
-      }
-      .modal.show {
-        display: flex;
-      }
-      .modal-content {
-        background: var(--paper);
-        padding: 20px;
-        border-radius: var(--radius);
-        max-width: 400px;
-        width: 100%;
-      }
-      .form-group {
-        margin-bottom: 15px;
-      }
-      .form-group label {
-        display: block;
-        margin-bottom: 5px;
-      }
-      .form-group input {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid var(--grain);
-        border-radius: 4px;
-      }
-    </style>
+    <title>Calendário de Lotes | Gestão de Estoque</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/calendario.css" />
   </head>
   <body>
         <header class="site-header app-header">
@@ -92,12 +20,16 @@
         <a href="vendas.html">Vendas</a>
         <a href="estoque.html">Estoque</a>
         <a href="administrativo.html">Administrativo</a>
-        <a href="novidades.html">Novidades</a>
+        <a href="novidades.html">Produtos</a>
         <a class="ghost-link" href="index.html">Sair</a>
       </nav>
     </header>
 
     <main style="padding: 20px;">
+      <section class="calendar-intro">
+        <h1>Calendário de Lotes</h1>
+        <p>Gerencie prazos de validade e reserve estoque para datas específicas</p>
+      </section>
       <div class="calendar">
         <div class="calendar-header">
           <button id="prev-month">&lt;</button>
@@ -115,8 +47,8 @@
 
     <div class="modal" id="cadastro-modal">
       <div class="modal-content">
-        <h2>Cadastro NecessÃ¡rio</h2>
-        <p>Para acessar o calendÃ¡rio, vocÃª precisa se cadastrar.</p>
+        <h2>Cadastro necessário</h2>
+        <p>Para acessar o calendário, você precisa se cadastrar.</p>
         <form id="cadastro-form">
           <div class="form-group">
             <label for="nome">Nome:</label>
@@ -230,9 +162,11 @@
       }
 
       function getMonthName(month) {
-        const months = ['Janeiro', 'Fevereiro', 'MarÃ§o', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+        const months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
         return months[month];
       }
     </script>
+
+    <script src="../js/calendario.js"></script>
   </body>
 </html>

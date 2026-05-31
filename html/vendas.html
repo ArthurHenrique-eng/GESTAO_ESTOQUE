@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vendas | ChÃ¡s & GrÃ£os</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Vendas | Chás & Grãos</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/vendas.css" />
   </head>
   <body class="page-app" data-page="vendas">
     <header class="site-header app-header">
       <div class="logo">
         <span class="logo-mark">G</span>
         <div>
-          <p class="logo-title">GestÃ£o de Estoque</p>
-          <p class="logo-subtitle">ChÃ¡s &amp; GrÃ£os</p>
+          <p class="logo-title">Gestão de Estoque</p>
+          <p class="logo-subtitle">Chás &amp; Grãos</p>
         </div>
       </div>
       <nav class="site-nav">
         <a class="active" href="vendas.html">Vendas</a>
         <a href="estoque.html">Estoque</a>
         <a href="administrativo.html">Administrativo</a>
-        <a href="novidades.html">Novidades</a>
+        <a href="novidades.html">Produtos</a>
         <a class="ghost-link" href="index.html">Sair</a>
       </nav>
     </header>
@@ -29,8 +30,8 @@
         <div>
           <h1>Vendas em tempo real</h1>
           <p>
-            Acompanhe o fluxo de pedidos de chÃ¡s, grÃ£os especiais e kits de
-            degustaÃ§Ã£o.
+            Acompanhe o fluxo de pedidos de chás, grãos especiais e kits de
+            degustação.
           </p>
           <div class="hero-actions">
             <button class="primary-button" type="button">Nova venda</button>
@@ -43,13 +44,13 @@
       <section class="cards-grid">
         <article class="metric-card">
           <p class="metric-label">Pedidos do dia</p>
-          <p class="metric-value">42</p>
-          <p class="metric-note">Ticket mÃ©dio R$ 78</p>
+          <p class="metric-value">67</p>
+          <p class="metric-note">Valor geral</p>
         </article>
         <article class="metric-card">
           <p class="metric-label">Produtos em alta</p>
           <p class="metric-value">Matcha &amp; Arabica</p>
-          <p class="metric-note">+18% na Ãºltima semana</p>
+          <p class="metric-note">+18% na ultima semana</p>
         </article>
         <article class="metric-card">
           <p class="metric-label">Pagamento pendente</p>
@@ -60,11 +61,11 @@
 
       <section class="table-card">
         <div class="table-header">
-          <h2>Ãšltimos pedidos</h2>
+          <h2>Ultimos pedidos</h2>
           <div class="chip-group">
             <span class="chip">Hoje</span>
             <span class="chip soft">Semana</span>
-            <span class="chip soft">MÃªs</span>
+            <span class="chip soft">mês</span>
           </div>
         </div>
         <div class="table-scroll">
@@ -82,28 +83,28 @@
               <tr>
                 <td>#CH-1842</td>
                 <td>Ana Borges</td>
-                <td>ChÃ¡ oolong, blend cÃ­trico</td>
+                <td>Chá bolong, blend citrico</td>
                 <td><span class="status-pill ok">Pago</span></td>
                 <td>R$ 128</td>
               </tr>
               <tr>
                 <td>#GR-0091</td>
                 <td>Lucas T.</td>
-                <td>GrÃ£o etÃ­ope, kit moedor</td>
-                <td><span class="status-pill warn">SeparaÃ§Ã£o</span></td>
+                <td>Grão estã­ope, kit moedor</td>
+                <td><span class="status-pill warn">Separado</span></td>
                 <td>R$ 212</td>
               </tr>
               <tr>
                 <td>#CH-1839</td>
                 <td>Marina Souza</td>
-                <td>ChÃ¡ branco, flor de jasmim</td>
-                <td><span class="status-pill neutral">Envio</span></td>
+                <td>Chá branco, flor de jasmim</td>
+                <td><span class="status-pill neutral">Enviado</span></td>
                 <td>R$ 96</td>
               </tr>
               <tr>
                 <td>#GR-0087</td>
                 <td>Caio Ramos</td>
-                <td>Blend torrado mÃ©dio</td>
+                <td>Blend torrado médio</td>
                 <td><span class="status-pill ok">Pago</span></td>
                 <td>R$ 74</td>
               </tr>
@@ -111,7 +112,9 @@
           </table>
         </div>
       </section>
-    </main> 
+    </main>
+
+    <script src="../js/vendas.js"></script>
   </body>
 </html>
 
