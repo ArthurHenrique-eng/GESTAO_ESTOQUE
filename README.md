@@ -114,10 +114,9 @@ const validPasswords = {
 ```
 ---
 
-<h3 align="center"> Autor </h3>
-```
-📧 Email: arthurhpb7@gmail.com
-🐙 GitHub: github.com/ArthurHenrique-eng
-💼 LinkedIn: linkedin.com/in/seu-perfil
+## Autor
+```Email: arthurhpb7@gmail.com
+GitHub: github.com/ArthurHenrique-eng
+LinkedIn: linkedin.com/in/seu-perfil
 ```
 ---
