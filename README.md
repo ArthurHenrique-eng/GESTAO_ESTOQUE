@@ -115,7 +115,7 @@ const validPasswords = {
 ```
 ---
 
-<h3 aling="center"> AUTOR </h3>
+<h3 align="center"> Autor </h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/arthur-barbosa-38564b371/">
