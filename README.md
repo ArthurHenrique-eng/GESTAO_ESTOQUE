@@ -1,59 +1,57 @@
-# Gestão de Estoque - Sistema Web
+# GESTÃO DE ESTOQUE - SISTEMA WEB
 
-Um sistema integrado de gestão de estoque para lojas de chás e grãos especiais, com controle de vendas, estoque, produtos e calendário de lotes.
+`Desenvolvedor Full Stack | Sistema Integrado de Gestão | HTML • CSS • JavaScript`
 
-## 📋 Visão Geral
+Um sistema de gestão de estoque moderno e responsivo para lojas de chás e grãos especiais. Desenvolvido com foco em usabilidade, performance e interfaces intuitivas para diferentes perfis de usuário.
 
-O **Gestão de Estoque** é uma aplicação web responsiva que oferece visibilidade completa sobre operações de vendas e estoque, com interfaces específicas para diferentes perfis de usuário: vendedores, estoquistas e administrativo.
+---
 
-### Principais Funcionalidades
+## 📌 Sobre o Projeto
 
-- ✅ **Autenticação por perfil**: Acesso diferenciado para vendedor, estoquista e administrativo
-- 📊 **Dashboard em tempo real**: Visualização de vendas, alertas e atividades
+Gestão de Estoque é uma aplicação web que oferece **visibilidade completa** sobre operações de vendas, controle de estoque, gerenciamento de lotes e relatórios administrativos. Ideal para pequenas e médias lojas que buscam organizar suas operações em um único lugar.
+
+### ✨ Funcionalidades Principais
+
+- 🔐 **Autenticação por Perfil**: Vendedor, Estoquista, Administrativo
+- 📊 **Dashboard em Tempo Real**: Visualização de vendas, alertas e atividades
 - 💳 **Gestão de Vendas**: Rastreamento de pedidos e clientes VIP
-- 📦 **Mapa de Estoque**: Controle de entradas, validade e níveis mínimos
-- ✨ **Novidades**: Gerenciamento de produtos recém-chegados
-- 📅 **Calendário de Lotes**: Gestão de prazos de validade e reservas
+- 📦 **Mapa de Estoque**: Controle total de entradas, validade e níveis mínimos
+- ✨ **Novidades**: Gerenciamento de produtos em destaque
+- 📅 **Calendário de Lotes**: Gestão inteligente de prazos de validade
 - ⚙️ **Administrativo**: Relatórios, finanças e gerenciamento de equipe
 
 ---
 
-## 🚀 Como Começar
+## 🚀 Quick Start
 
 ### Requisitos
-- Navegador web moderno (Chrome, Firefox, Safari, Edge)
-- Servidor web local (recomendado: Live Server no VS Code)
+```
+✓ Navegador moderno (Chrome, Firefox, Safari, Edge)
+✓ Servidor web local (Live Server recomendado)
+```
 
-### Instalação
+### Instalação em 3 Passos
 
-1. **Clone o repositório**
 ```bash
-git clone <seu-repositório>
+# 1️⃣ Clone o repositório
+git clone https://github.com/seu-usuario/GESTAO_ESTOQUE.git
 cd GESTAO_ESTOQUE
-```
 
-2. **Execute um servidor local**
+# 2️⃣ Execute com Live Server
+# Clique direito em index.html → "Open with Live Server"
 
-Opção 1 - Usando Live Server no VS Code:
-- Instale a extensão "Live Server"
-- Clique com botão direito em `index.html`
-- Selecione "Open with Live Server"
-
-Opção 2 - Usando Python:
-```bash
+# 3️⃣ Ou use Python
 python -m http.server 8000
-# Acesse http://localhost:8000
+# Acesse: http://localhost:8000
 ```
 
-### Acesso ao Sistema
-
-**Tela de Login** (`index.html`)
+### Login Padrão
 
 | Perfil | Senha |
 |--------|-------|
-| Vendedor | vendedor123 |
-| Estoquista | estoque123 |
-| Administrativo | admin123 |
+| 👨‍💼 Vendedor | `vendedor123` |
+| 📦 Estoquista | `estoque123` |
+| ⚙️ Administrativo | `admin123` |
 
 ---
 
@@ -61,55 +59,107 @@ python -m http.server 8000
 
 ```
 GESTAO_ESTOQUE/
-├── html/                      # Páginas HTML
-│   ├── index.html            # Tela de login
-│   ├── home.html             # Dashboard principal
-│   ├── vendas.html           # Gestão de vendas
-│   ├── estoque.html          # Mapa de estoque
-│   ├── novidades.html        # Produtos em destaque
-│   ├── calendario.html       # Calendário de lotes
-│   └── administrativo.html   # Gestão administrativa
-├── css/                       # Estilos CSS
-│   ├── style.css             # Estilos globais
-│   ├── index.css             # Estilos da tela de login
-│   ├── home.css              # Estilos do dashboard
-│   ├── vendas.css            # Estilos de vendas
-│   ├── estoque.css           # Estilos de estoque
-│   ├── novidades.css         # Estilos de novidades
-│   ├── calendario.css        # Estilos do calendário
-│   └── administrativo.css    # Estilos administrativos
-├── js/                        # Scripts JavaScript
-│   ├── script.js             # Lógica de autenticação
-│   ├── home.js               # Lógica do dashboard
-│   ├── vendas.js             # Lógica de vendas
-│   ├── estoque.js            # Lógica de estoque
-│   ├── novidades.js          # Lógica de novidades
-│   ├── calendario.js         # Lógica do calendário
-│   └── administrativo.js     # Lógica administrativa
-├── img/                       # Imagens e ícones
-├── README.md                  # Este arquivo
-└── .vscode/                   # Configurações VS Code
+│
+├── 📄 html/
+│   ├── index.html              # Tela de login
+│   ├── home.html               # Dashboard principal
+│   ├── vendas.html             # Gestão de vendas
+│   ├── estoque.html            # Mapa de estoque
+│   ├── novidades.html          # Produtos em destaque
+│   ├── calendario.html         # Calendário de lotes
+│   └── administrativo.html     # Gestão administrativa
+│
+├── 🎨 css/
+│   ├── style.css               # Estilos globais
+│   ├── index.css               # Estilos do login
+│   ├── home.css                # Estilos do dashboard
+│   ├── vendas.css              # Estilos de vendas
+│   ├── estoque.css             # Estilos de estoque
+│   ├── novidades.css           # Estilos de novidades
+│   ├── calendario.css          # Estilos do calendário
+│   └── administrativo.css      # Estilos administrativos
+│
+├── ⚡ js/
+│   ├── script.js               # Lógica de autenticação
+│   ├── home.js                 # Lógica do dashboard
+│   ├── vendas.js               # Lógica de vendas
+│   ├── estoque.js              # Lógica de estoque
+│   ├── novidades.js            # Lógica de novidades
+│   ├── calendario.js           # Lógica do calendário
+│   └── administrativo.js       # Lógica administrativa
+│
+├── 🖼️ img/                      # Imagens e ícones
+├── 📚 README.md                # Este arquivo
+├── 📖 TECHNICAL_GUIDE.md       # Guia técnico
+├── 👤 USER_GUIDES.md           # Manuais por perfil
+├── ❓ FAQ.md                    # Perguntas frequentes
+└── 🤝 CONTRIBUTING.md          # Guia de contribuição
 ```
 
 ---
 
-## 🔐 Autenticação
+## 🎯 Perfis de Usuário
 
-### Sistema de Login
+### 👨‍💼 Vendedor
+- Visualizar dados de vendas em tempo real
+- Consultar disponibilidade de estoque
+- Acompanhar histórico de vendas
+- Ver produtos em destaque
 
-O sistema utiliza autenticação local com armazenamento em `localStorage`:
+### 📦 Estoquista  
+- Registrar entradas e saídas
+- Monitorar níveis mínimos
+- Gerenciar prazos de validade
+- Processar devolução
 
-- **Tela**: `index.html`
-- **Script**: `js/script.js`
-- **Fluxo**: 
-  1. Usuário seleciona perfil
-  2. Digita senha
-  3. Sistema valida credenciais
-  4. Armazena role em `localStorage` se correto
-  5. Redireciona para `home.html`
+### ⚙️ Administrativo
+- Gerar relatórios completos
+- Gerenciar usuários
+- Configurar sistema
+- Análise de KPIs
+- Exportar dados
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+```
+Frontend
+├── HTML5          → Semântica e estrutura
+├── CSS3           → Design responsivo (Flexbox, Grid)
+└── JavaScript ES6 → Lógica e interatividade
+
+Armazenamento
+└── localStorage   → Persistência local
+
+Compatibilidade
+├── ✅ Chrome 90+
+├── ✅ Firefox 88+
+├── ✅ Safari 14+
+└── ✅ Edge 90+
+```
+
+---
+
+## 📖 Documentação
+
+| Documento | Descrição |
+|-----------|-----------|
+| **README.md** | Você está aqui! Visão geral e início rápido |
+| **TECHNICAL_GUIDE.md** | Arquitetura, padrões e stack técnico |
+| **USER_GUIDES.md** | Manuais específicos para cada perfil |
+| **FAQ.md** | Perguntas frequentes e troubleshooting |
+| **CONTRIBUTING.md** | Como contribuir com o projeto |
+
+---
+
+## 🔐 Segurança
+
+### ⚠️ Status Atual
+Este é um **sistema de demonstração/protótipo**. 
 
 ```javascript
-// Exemplo de validação
+// Senhas hardcoded para teste
 const validPasswords = {
   vendedor: 'vendedor123',
   estoquista: 'estoque123',
@@ -117,370 +167,178 @@ const validPasswords = {
 };
 ```
 
----
+### 🛡️ Recomendações para Produção
 
-## 📄 Páginas da Aplicação
-
-### 1. **Tela de Login** (`index.html`)
-- Seleção de perfil de usuário
-- Entrada de senha
-- Cards informativos de vendas e alertas
-- Feedback visual de erros/sucesso
-
-**Script associado**: `js/script.js`
-
----
-
-### 2. **Dashboard Principal** (`home.html`)
-Central de controle com acesso rápido a todas as funcionalidades.
-
-**Componentes**:
-- Estatísticas rápidas (Vendas, Estoque, Alertas, Lotes)
-- Seções de acesso rápido com atalhos
-- Feed de atividade recente
-- Navegação principal
-
-**Script associado**: `js/home.js`
-
----
-
-### 3. **Gestão de Vendas** (`vendas.html`)
-Acompanhamento de pedidos e desempenho comercial.
-
-**Funcionalidades**:
-- Histórico de vendas
-- Clientes VIP
-- Performance por período
-- Relatórios de receita
-
-**Script associado**: `js/vendas.js`
-
----
-
-### 4. **Mapa de Estoque** (`estoque.html`)
-Controle detalhado dos itens em estoque.
-
-**Funcionalidades**:
-- Lista de produtos com quantidades
-- Alertas de validade
-- Níveis mínimos configuráveis
-- Registro de entradas/saídas
-
-**Script associado**: `js/estoque.js`
-
----
-
-### 5. **Novidades em Destaque** (`novidades.html`)
-Gerenciamento de produtos recém-chegados.
-
-**Funcionalidades**:
-- Produtos em promoção
-- Itens de reposição rápida
-- Destaques por categoria
-- Indicadores de popularidade
-
-**Script associado**: `js/novidades.js`
-
----
-
-### 6. **Calendário de Lotes** (`calendario.html`)
-Gestão de prazos de validade e reservas.
-
-**Funcionalidades**:
-- Visualização de lotes por período
-- Alertas de proximidade de vencimento
-- Reservas programadas
-- Timeline de lotes
-
-**Script associado**: `js/calendario.js`
-
----
-
-### 7. **Gestão Administrativa** (`administrativo.html`)
-Ferramentas de gestão e relatórios.
-
-**Funcionalidades**:
-- Relatórios financeiros
-- Gerenciamento de usuários
-- Configurações de sistema
-- Exportação de dados
-
-**Script associado**: `js/administrativo.js`
-
----
-
-## 🎨 Design e Estilos
-
-### Sistema de Cores
-- **Primário**: Tons de verde (referência a produtos naturais)
-- **Secundário**: Tons neutros (cinza, branco)
-- **Acentos**: Vermelho para alertas, azul para informações
-
-### Tipografia
-- **Fonte principal**: System fonts para melhor performance
-- **Hierarquia**: H1, H2, H3 para estrutura clara
-- **Legibilidade**: Contraste adequado em todas as seções
-
-### Componentes Reutilizáveis
-
-#### Buttons
-```html
-<!-- Primary -->
-<button class="primary-button">Ação Principal</button>
-
-<!-- Ghost -->
-<button class="ghost-button">Ação Secundária</button>
-
-<!-- Outline -->
-<button class="outline-button">Ação Terciária</button>
+```
+✓ Implementar backend com Node.js/Express
+✓ Usar autenticação JWT
+✓ Criptografar senhas com bcrypt
+✓ HTTPS/TLS obrigatório
+✓ Validação no servidor (não apenas cliente)
+✓ Rate limiting no login
+✓ Suporte a 2FA
+✓ Auditoria de acessos
 ```
 
-#### Cards
-```html
-<!-- Card simples -->
-<article class="mini-card">
-  <p class="mini-title">Título</p>
-  <p class="mini-value">Valor</p>
-  <p class="mini-note">Nota</p>
-</article>
-
-<!-- Stat Card -->
-<article class="stat-card">
-  <div class="stat-icon">📊</div>
-  <h3>Título</h3>
-  <p class="stat-number">Número</p>
-  <p class="stat-label">Label</p>
-</article>
-```
-
----
-
-## 💻 Desenvolvimento
-
-### Tecnologias Utilizadas
-- **HTML5**: Marcação semântica
-- **CSS3**: Estilos responsivos (Grid, Flexbox)
-- **JavaScript**: Lógica e interatividade
-- **localStorage**: Persistência local de dados
-
-### Boas Práticas Implementadas
-- ✅ Semântica HTML apropriada
-- ✅ CSS organizado e modular
-- ✅ JavaScript com event listeners claros
-- ✅ Design responsivo mobile-first
-- ✅ Acessibilidade (aria-labels, navegação clara)
-
-### Estrutura de Arquivo CSS
-
-Cada página possui seu próprio arquivo CSS:
-- `style.css` - Estilos globais e base
-- `[página].css` - Estilos específicos da página
-
-Isso facilita:
-- Manutenção individual
-- Carregamento otimizado
-- Organização clara de responsabilidades
-
----
-
-## 🔧 Configuração e Personalização
-
-### Alterar Credenciais de Login
-
-Edite `js/script.js`:
-```javascript
-const validPasswords = {
-  vendedor: 'sua_senha_aqui',
-  estoquista: 'sua_senha_aqui',
-  administrativo: 'sua_senha_aqui'
-};
-```
-
-### Personalizar Cores
-
-Edite `css/style.css` e procure pelas variáveis CSS ou cores hardcoded. Exemplo de paleta:
-
-```css
-:root {
-  --primary: #2ecc71;    /* Verde */
-  --secondary: #3498db;  /* Azul */
-  --danger: #e74c3c;     /* Vermelho */
-  --warning: #f39c12;    /* Laranja */
-}
-```
-
-### Adicionar Nova Página
-
-1. Crie `html/nova-pagina.html`
-2. Crie `css/nova-pagina.css`
-3. Crie `js/nova-pagina.js`
-4. Adicione link na navegação em `style.css`
+Consulte [`TECHNICAL_GUIDE.md`](./TECHNICAL_GUIDE.md) para detalhes completos.
 
 ---
 
 ## 📱 Responsividade
 
-O sistema é totalmente responsivo:
+Totalmente otimizado para todos os dispositivos:
 
-- **Mobile**: Até 768px
-  - Layout em coluna única
-  - Menu colapsável
-  - Tamanho de toque adequado (44x44px)
-
-- **Tablet**: 768px a 1024px
-  - 2 colunas em grid
-  - Navegação horizontal
-
-- **Desktop**: Acima de 1024px
-  - 3+ colunas
-  - Máximo conforto visual
-
----
-
-## 🔒 Segurança
-
-**⚠️ Importante**: Este é um sistema de demonstração/protótipo.
-
-### Considerações para Produção:
-- ❌ **NÃO** use localStorage para senhas reais
-- ✅ Implemente autenticação no servidor (JWT, Sessions)
-- ✅ Use HTTPS/TLS para todas as comunicações
-- ✅ Valide entrada no servidor (não apenas cliente)
-- ✅ Implemente rate limiting para login
-- ✅ Use hash bcrypt para senhas
-- ✅ Adicione CSRF tokens em formulários
-- ✅ Considere autenticação de dois fatores (2FA)
-
----
-
-## 🌍 Deploy
-
-### Opções de Deploy
-
-#### 1. **GitHub Pages**
-```bash
-# Empurre para o repositório
-git push origin main
-
-# GitHub Pages servirá automaticamente
+```
+📱 Mobile     (< 768px)   → Layout em coluna única
+📊 Tablet     (768-1024px) → 2 colunas
+🖥️ Desktop    (> 1024px)  → 3+ colunas
 ```
 
-#### 2. **Netlify**
+Teste em:
+- iPhone/iPad
+- Android
+- Tablets
+- Notebooks
+
+---
+
+## 🎨 Design & Componentes
+
+### Paleta de Cores
+```css
+--primary:   #2ecc71  /* Verde */
+--secondary: #3498db  /* Azul */
+--danger:    #e74c3c  /* Vermelho */
+--warning:   #f39c12  /* Laranja */
+```
+
+### Componentes Reutilizáveis
+```html
+<!-- Buttons -->
+<button class="primary-button">Ação Principal</button>
+<button class="ghost-button">Ação Secundária</button>
+
+<!-- Cards -->
+<article class="stat-card">...</article>
+<article class="mini-card">...</article>
+```
+
+---
+
+## 🚀 Deploy
+
+### GitHub Pages
 ```bash
-# Via CLI
+git push origin main
+# Disponível automaticamente em github.com/seu-usuario/GESTAO_ESTOQUE
+```
+
+### Netlify
+```bash
 npm install -g netlify-cli
 netlify deploy --dir=.
-
-# Ou arraste a pasta no painel
 ```
 
-#### 3. **Vercel**
+### Servidor Próprio
 ```bash
-# Via CLI
-npm i -g vercel
-vercel
+# Copiar para /var/www/html (Apache)
+cp -r * /var/www/html/
+
+# Ou usar Node.js + Express para mais controle
 ```
 
-#### 4. **Servidor próprio**
-- Copie arquivos para `/var/www/html` (Apache)
-- Ou use Node.js com Express para mais controle
+---
+
+## 🤝 Contribuindo
+
+Quer contribuir? Ótimo! Veja [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+
+```bash
+# 1. Faça um fork
+# 2. Crie uma branch (git checkout -b feature/sua-feature)
+# 3. Commit (git commit -am 'Adiciona feature')
+# 4. Push (git push origin feature/sua-feature)
+# 5. Abra um Pull Request
+```
 
 ---
 
-## 🐛 Troubleshooting
+## ❓ Dúvidas Frequentes
 
-### Problema: Login não funciona
-**Solução**: 
-- Verifique se JavaScript está habilitado
-- Abra DevTools (F12) para verificar erros
-- Confirme a senha correta na tabela de credenciais
+**P: Como resetar a senha?**  
+R: Veja [`FAQ.md`](./FAQ.md) para soluções de autenticação.
 
-### Problema: Página não carrega corretamente
-**Solução**:
-- Limpe cache do navegador (Ctrl+Shift+Delete)
-- Verifique conexão do servidor local
-- Inspecione console para erros 404
+**P: Como criar um novo usuário?**  
+R: Consulte [`USER_GUIDES.md`](./USER_GUIDES.md) - seção Administrativo.
 
-### Problema: Estilos não aparecem
-**Solução**:
-- Verifique se arquivos CSS estão em `css/`
-- Confirme caminhos relativos estão corretos
-- Recarregue com Ctrl+Shift+R (hard refresh)
+**P: O site está lento, o que fazer?**  
+R: Limpe cache (Ctrl+Shift+Delete) e tente em outro navegador.
 
 ---
 
-## 📞 Suporte e Contribuições
+## 🐛 Reportar Bugs
 
-### Reportar Bugs
-Crie uma issue descrevendo:
-- Comportamento esperado
-- Comportamento obtido
-- Passos para reproduzir
-- Screenshots (se aplicável)
+Encontrou um bug? [Abra uma issue](https://github.com/seu-usuario/GESTAO_ESTOQUE/issues)
 
-### Contribuir
-1. Faça um fork do repositório
-2. Crie uma branch para sua feature (`git checkout -b feature/minha-feature`)
-3. Commit suas mudanças (`git commit -am 'Adiciona minha feature'`)
-4. Push para a branch (`git push origin feature/minha-feature`)
-5. Abra um Pull Request
+**Inclua:**
+- Navegador e versão
+- O que você estava fazendo
+- O comportamento esperado
+- O comportamento obtido
+- Screenshots (se possível)
 
 ---
 
-## 📊 Roadmap Futuro
+## 📊 Roadmap
 
 - [ ] Backend com Node.js/Express
-- [ ] Banco de dados (MongoDB/PostgreSQL)
+- [ ] Banco de dados (PostgreSQL)
 - [ ] Autenticação real com JWT
 - [ ] API RESTful
-- [ ] Sincronização em tempo real (WebSocket)
-- [ ] Aplicativo mobile (React Native)
-- [ ] Sistema de notificações
-- [ ] Relatórios avançados com gráficos
-- [ ] Integração com sistemas POS
-- [ ] Multi-idioma (i18n)
+- [ ] WebSockets para tempo real
+- [ ] App mobile (React Native)
+- [ ] Notificações push
+- [ ] Relatórios avançados
+- [ ] Integração com POS
+- [ ] Suporte multi-idioma
+
+---
+
+## 📞 Contato & Suporte
+
+```
+📧 Email: seu-email@example.com
+🐙 GitHub: github.com/seu-usuario
+💼 LinkedIn: linkedin.com/in/seu-perfil
+```
+
+### Tempo de Resposta
+- 🚨 Bug crítico: < 1 hora
+- 🐛 Bug menor: < 4 horas  
+- 💬 Dúvida: < 24 horas
 
 ---
 
 ## 📄 Licença
 
-Este projeto está sob licença MIT. Consulte arquivo LICENSE para mais informações.
+Este projeto está sob licença **MIT**. Veja [`LICENSE`](./LICENSE) para detalhes.
 
 ---
 
-## 👤 Autor
+## ✨ Agradecimentos
 
-**Desenvolvido em**: 2026  
-**Versão**: 1.0.0  
-**Status**: Ativo
-
----
-
-## 📝 Changelog
-
-### v1.0.0 (2026-05-30)
-- ✅ Versão inicial com 7 páginas principais
-- ✅ Sistema de autenticação por perfil
-- ✅ Dashboard com estatísticas
-- ✅ Calendário de lotes
-- ✅ Design responsivo completo
+- Inspirado em sistemas de gestão profissionais
+- Desenvolvido com foco em UX/UI
+- Comunidade open-source por ferramentas e recursos
 
 ---
 
-## 💡 Dicas Úteis
+<div align="center">
 
-### Para Desenvolvedores
-- Use `console.log()` para debug
-- DevTools (F12) mostra erros e warnings
-- Inspecione elementos para ajustar CSS
+### Desenvolvido com ❤️ em 2026
 
-### Para Usuários
-- Use Enter no login para submeter
-- Explore todas as seções do dashboard
-- Role a página para ver mais conteúdo
+**Status:** Ativo | **Versão:** 1.0.0 | **Última atualização:** 31/05/2026
 
----
+[⭐ Deixe uma estrela se este projeto foi útil!](https://github.com/seu-usuario/GESTAO_ESTOQUE)
 
-**Obrigado por usar o Gestão de Estoque!** 🎉
-
-Para mais informações ou dúvidas, consulte o desenvolvedor.
+</div>
